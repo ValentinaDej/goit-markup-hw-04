@@ -9,6 +9,7 @@
   --color-main-bgn: #f5f4fa;
   --color-line: #ececec;
   --color-line-border: #eeeeee;
+  --color-banner-bgn: #c4c4c4;
   --font-page: 'Roboto', sans-serif;
   --font-logo: 'Raleway', sans-serif;
 }
@@ -68,8 +69,13 @@ button {
 }
 
 .dark-decoration {
-  background-color: var(--color-hero-bgn);
+  background-color: var(--color-banner-bgn);
   padding: 200px 0;
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 1600px;
 }
 
 .logo {
@@ -103,6 +109,8 @@ button {
 }
 
 .contact-list-item {
+  display: flex;
+  flex-direction: row-reverse;
   color: var(--color-text-grey);
   font-weight: 500;
   padding-top: 15px;
@@ -322,8 +330,20 @@ button {
 }
 
 .contact-list :not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
+
+/* .contact-list :nth-child(2n) {
+  margin-right: 30px;
+}
+
+.contact-list :nth-child(2n + 1) {
+  margin-right: 10px;
+}
+
+.contact-list :last-child {
+  margin-right: 0px;
+} */
 
 .advantage-list {
   display: flex;
@@ -406,4 +426,21 @@ button {
   padding-bottom: 24px;
   border: 1px solid var(--color-line-border);
   border-top: none;
+}
+
+.icon {
+  /* margin-right: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px; */
+  display: flex;
+
+  fill: var(--color-text-grey);
+  margin-right: 10px;
+  /* display: block;
+  text-align: center; */
+}
+
+.icon:focus,
+.icon:hover {
+  fill: var(--color-text-accent);
 }
