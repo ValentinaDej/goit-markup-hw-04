@@ -496,3 +496,50 @@ button {
 .clients-list-link:hover {
   fill: var(--color-text-accent);
 }
+
+.footer-social-links-title {
+  color: var(--color-text-white);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+
+  margin-top: 12px;
+  margin-bottom: 20px;
+}
+
+.footer-section {
+  display: flex;
+}
+
+.footer-adress {
+  margin-right: 70px;
+}
+
+.footer-social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.footer-social-links-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-links-icon {
+  fill: #afb1b8;
+}
+
+.footer-social-links-link:hover {
+  background-color: var(--color-text-accent);
+}
+
+.footer-social-links-link:hover .footer-social-links-icon {
+  fill: var(--color-text-white);
+}
