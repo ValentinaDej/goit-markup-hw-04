@@ -445,6 +445,7 @@ button {
   line-height: 2.25;
   font-weight: 700;
   margin-bottom: 4px;
+  color: var(--color-text-blacklight);
 }
 
 .portfolio-category {
